@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
+import Navbar from "./ui/navbar/navbar";
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -20,11 +21,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${dmSans.className} h-full antialiased bg-olive-950 text-amber-100`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en">
+      <body className={`${dmSans.className} antialiased bg-olive-950 text-amber-100`}>
+          <Navbar/>
+          {children}
+      </body>
     </html>
   );
 }
