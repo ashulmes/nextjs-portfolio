@@ -2,10 +2,11 @@ import Link from "next/link";
 import { IconType } from "react-icons";
 
 interface ButtonProps {
+  style: "primary" | "secondary" | "tertiary";
   href: string;
   text: string;
-  icon: IconType;
-  iconPosition: "right" | "left";
+  icon?: IconType;
+  iconPosition?: "right" | "left";
   rounded?: boolean;
 }
 
