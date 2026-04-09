@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${dmSans.className} antialiased bg-olive-950 text-amber-100`}
+        className={`${dmSans.className} antialiased bg-olive-950 text-white/90`}
       >
         <Navbar />
         {children}
