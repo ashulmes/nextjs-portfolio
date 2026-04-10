@@ -12,7 +12,7 @@ export default function Logo() {
   return (
     <Link href="#about" className="flex items-center space-x-2">
       <p
-        className={`${libreBodoni.className} tracking-wider text-2xl hidden md:block`}
+        className={`${libreBodoni.className} tracking-wide text-2xl hidden md:block text-amber-300/90 hover:text-white`}
       >
         Hi! I&apos;m Alex.
       </p>

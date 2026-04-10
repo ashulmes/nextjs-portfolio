@@ -19,10 +19,10 @@ export default function About() {
         >
           Hi! I&apos;m <span className="text-amber-300/90">Alex</span>.
         </h1>
-        <h2 className="font-extralight tracking-wider text-center">
+        <p className="font-extralight tracking-wider text-center">
           A customer-focused software engineer, with a passion for personal
           development, clean code and accessibility. Please ask me about my dog.
-        </h2>
+        </p>
       </div>
     </section>
   );

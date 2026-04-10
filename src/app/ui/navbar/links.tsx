@@ -18,7 +18,7 @@ export default function Links() {
           <li key={index}>
             <Link
               href={link.url}
-              className="hover:text-amber-300/90 text-sm font-extralight uppercase tracking-wider transition-colors duration-300"
+              className="hover:text-amber-300/90 text-sm font-extralight uppercase tracking-widest transition-colors duration-300"
               target={link.external ? `_blank` : `_self`}
             >
               {link.text}

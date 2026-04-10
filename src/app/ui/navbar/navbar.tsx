@@ -24,7 +24,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`h-24 fixed z-50 w-full px-[5%] border-b-1 border-amber-300/25`}
+      className={`h-18 fixed z-50 w-full px-[5%] border-b-1 border-amber-300/25`}
     >
       <div
         className={`flex items-center h-full justify-center ${userScroll ? "md:justify-between" : "md:justify-end"}`}
