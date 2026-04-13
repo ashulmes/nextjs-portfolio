@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
+import { Figtree } from "next/font/google";
 import Navbar from "./ui/navbar/navbar";
-import Footer from "./ui/footer/footer";
 import "./globals.css";
 
-const dmSans = DM_Sans({
-  variable: "--font-dm-sans",
+const figtree = Figtree({
+  variable: "--font-figtree",
   subsets: ["latin"],
-  weight: ["100", "200", "300", "500", "700"],
+  weight: ["300", "500", "700"],
   fallback: ["sans-serif"],
 });
 
@@ -24,11 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${dmSans.className} flex flex-col h-screen antialiased bg-olive-950 text-white/90`}
+        className={`${figtree.className} antialiased bg-olive-950 text-white/90`}
       >
         <Navbar />
         {children}
-        <Footer />
       </body>
     </html>
   );

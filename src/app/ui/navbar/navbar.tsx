@@ -9,7 +9,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const userScrollHandler = () => {
-      if (window.scrollY >= 90) {
+      if (window.scrollY > window.innerHeight / 2) {
         setUserScroll(true);
       } else {
         setUserScroll(false);
@@ -24,7 +24,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`h-18 fixed z-50 w-full px-[5%] border-b-1 border-amber-300/25`}
+      className={`h-18 fixed z-50 w-full px-[5%] border-b-1 border-amber-300/25 bg-olive-950`}
     >
       <div
         className={`flex items-center h-full justify-center ${userScroll ? "md:justify-between" : "md:justify-end"}`}
