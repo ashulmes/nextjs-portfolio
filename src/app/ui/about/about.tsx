@@ -1,11 +1,4 @@
-import { Libre_Bodoni } from "next/font/google";
-
-const libreBodoni = Libre_Bodoni({
-  variable: "--font-dm-sans",
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-  fallback: ["serif"],
-});
+import { libreBodoni } from "@/app/fonts";
 
 export default function About() {
   return (

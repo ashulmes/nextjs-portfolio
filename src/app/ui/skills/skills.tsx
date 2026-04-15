@@ -1,13 +1,6 @@
-import { Libre_Bodoni } from "next/font/google";
-import Card from "../general/card";
+import { libreBodoni } from "@/app/fonts";
+import Card from "./card";
 import { VscTools, VscFeedback, VscSortPrecedence } from "react-icons/vsc";
-
-const libreBodoni = Libre_Bodoni({
-  variable: "--font-dm-sans",
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-  fallback: ["serif"],
-});
 
 const skillCards = [
   {

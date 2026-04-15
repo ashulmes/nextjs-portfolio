@@ -1,17 +1,10 @@
 import type { Metadata } from "next";
-import { Figtree } from "next/font/google";
 import Navbar from "./ui/navbar/navbar";
+import { figtree } from "@/app/fonts";
 import "./globals.css";
 
-const figtree = Figtree({
-  variable: "--font-figtree",
-  subsets: ["latin"],
-  weight: ["300", "500", "700"],
-  fallback: ["sans-serif"],
-});
-
 export const metadata: Metadata = {
-  title: "Alexandra Hulmes",
+  title: "Alex Sumner-Hulmes",
   description: "Frontend Software Engineer",
 };
 
