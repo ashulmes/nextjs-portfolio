@@ -1,8 +1,8 @@
 import Link from "next/link";
 
 const navLinks = [
-  { url: "#skills", text: "Skills", external: false },
-  { url: "#projects", text: "Projects", external: false },
+  { url: "/#skills", text: "Skills", external: false },
+  { url: "/#projects", text: "Projects", external: false },
   {
     url: "https://uk.linkedin.com/in/ashulmes",
     text: "Connect",
