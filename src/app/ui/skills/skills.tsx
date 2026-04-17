@@ -27,14 +27,14 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="h-screen relative flex justify-center items-center overflow-hidden flex-col"
+      className="h-auto md:h-screen relative flex justify-center items-center overflow-hidden flex-col"
     >
       <h2
         className={`${libreBodoni.className} tracking-wide text-center text-4xl md:text-6xl text-white`}
       >
         My <span className="text-amber-300/90">toolkit</span>.
       </h2>
-      <div className="flex space-x-0 md:space-x-8 space-y-8 md:space-y-0 p-10 max-w-[910] justify-between flex-col md:flex-row">
+      <ul className="flex space-x-0 md:space-x-8 space-y-8 md:space-y-0 p-10 max-w-[910] justify-between flex-col md:flex-row">
         {skillCards.map((card, index) => {
           return (
             <Card
@@ -45,7 +45,7 @@ export default function Skills() {
             />
           );
         })}
-      </div>
+      </ul>
     </section>
   );
 }
